@@ -1,85 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-root="https://fsprojects.github.io/fantomas/">
 
 <head>
-    <meta charset="utf-8">
-    <title>FormatConfig (fantomas)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Florian Verdonck, Jindřich Ivánek">
-
-    <link rel="stylesheet" id="theme_link" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/materia/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <link type="text/css" rel="stylesheet" href="/fantomas/content/navbar-fixed-left.css" />
-    <link type="text/css" rel="stylesheet" href="/fantomas/content/fsdocs-default.css" />
-    <link type="text/css" rel="stylesheet" href="/fantomas/content/fsdocs-custom.css" />
-    <script type="text/javascript" src="/fantomas/content/fsdocs-tips.js"></script>
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
-    <!-- END SEARCH BOX: this adds support for the search box -->
-    
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Florian Verdonck, Jindřich Ivánek, David Schaefer">
+  <title>FormatConfig (fantomas)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Reem+Kufi:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://fsprojects.github.io/fantomas/images/favicon.ico">
+  <link type="text/css" rel="stylesheet" href="https://fsprojects.github.io/fantomas/content/fsdocs-custom.css" />
+  <script type="text/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-tips.js"></script>
+  <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+  <!-- END SEARCH BOX: this adds support for the search box -->
+  
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-secondary fixed-left" id="fsdocs-nav">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse navbar-nav-scroll" id="navbarsExampleDefault">
-            <a href="/fantomas/"><img id="fsdocs-logo" src="/fantomas/img/logo.png" /></a>
-            <!-- BEGIN SEARCH BOX: this adds support for the search box -->
-            <div id="header">
-                <div class="searchbox" id="fsdocs-searchbox">
-                    <label for="search-by">
-                        <i class="fas fa-search"></i>
-                    </label>
-                    <input data-search-input="" id="search-by" type="search" placeholder="Search..." />
-                    <span data-search-clear="">
-                        <i class="fas fa-times"></i>
-                    </span>
+  <main id="main-container">
+     <div id="sidebar-wrapper" class="bg-primary h-100 fs-5 collapse show">
+      <div id="sidebar-header" class="d-flex justify-content-end mt-1">
+      <button class="btn d-md-none" data-bs-toggle="collapse" data-bs-target="#sidebar-wrapper" data-bs-parent="#main-container" aria-controls="sidebar-wrapper" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="sidebar-toggle fs-3 bi bi-x-lg"></i>
+                  </button>
+              </div>
+      <div id="sidebar-logo" class="d-flex justify-content-center p-5">
+      <a href="https://fsprojects.github.io/fantomas//docs/index.html" ><img id="fsdocs-logo" src="https://fsprojects.github.io/fantomas//images/logo-fantomas-white.svg" /></a>
+</div>
+      <div id="sidebar-content" class="list-unstyled ps-0 text-white fs-6">
+                    <div id="end-users-wrapper" class="p-2 list-wrapper menu-open">
+            <li class="docs-menu">
+                <button class="btn text-white d-flex p-1 justify-content-between align-items-center" data-bs-toggle="collapse"
+                        data-bs-target="#end-users" aria-expanded="true">
+                        End-users
+                        <i class="bi bi-chevron-down mx-2" style="-webkit-text-stroke: 2px;"></i>
+                </button>
+                <div id="end-users" class="ms-4 collapse show">
+                    <ul class="list-unstyled fw-normal mb-0">
+                        <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GettingStarted.html" class="nav-link mt-2 d-block" > Getting Started
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/StyleGuide.html" class="nav-link mt-2 d-block" > Style guide
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Configuration.html" class="nav-link mt-2 d-block" > Configuration
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/IgnoreFiles.html" class="nav-link mt-2 d-block" > Ignore Files
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FormattingCheck.html" class="nav-link mt-2 d-block" > Formatting Check
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/GitHooks.html" class="nav-link mt-2 d-block" > Git hooks
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/VisualStudio.html" class="nav-link mt-2 d-block" > Visual Studio
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAKE.html" class="nav-link mt-2 d-block" > FAKE build system
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Rider.html" class="nav-link mt-2 d-block" > JetBrains Rider
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/VSCode.html" class="nav-link mt-2 d-block" > Visual Studio Code
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/Benchmarks.html" class="nav-link mt-2 d-block" > Benchmarks
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/end-users/FAQ.html" class="nav-link mt-2 d-block" > FAQ
+</a></li>
+
+                    </ul>
                 </div>
+            </li>
             </div>
 
-            <!-- END SEARCH BOX: this adds support for the search box -->
-            <ul class="navbar-nav">
-                <li class="nav-header">Links</li>
-                <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="https://github.com/fsprojects/fantomas/blob/master/LICENSE.md">License</a></li>
-                <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="https://github.com/fsprojects/fantomas/blob/master/CHANGELOG.md">Release Notes</a></li>
-                <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="https://github.com/fsprojects/fantomas/">Source Repository</a></li>
-                
-                <li class="nav-header">
-  API Reference
-</li>             
-<li class="nav-item">
-  <a class="nav-link" href="/fantomas/reference/index.html">
-    All Namespaces
-  </a>
-</li>
-            </ul>
+            <div id="contributors-wrapper" class="p-2 list-wrapper menu-open">
+            <li class="docs-menu">
+                <button class="btn text-white d-flex p-1 justify-content-between align-items-center" data-bs-toggle="collapse"
+                        data-bs-target="#contributors" aria-expanded="true">
+                        Contributors
+                        <i class="bi bi-chevron-down mx-2" style="-webkit-text-stroke: 2px;"></i>
+                </button>
+                <div id="contributors" class="ms-4 collapse show">
+                    <ul class="list-unstyled fw-normal mb-0">
+                        <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Index.html" class="nav-link mt-2 d-block" > Contributors
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/FSharp.html" class="nav-link mt-2 d-block" > F#
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Getting Started.html" class="nav-link mt-2 d-block" > Getting started
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Solution Structure.html" class="nav-link mt-2 d-block" > Solution structure
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Prepare Context.html" class="nav-link mt-2 d-block" > Fantomas.Core overview (1)
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Print AST with Context.html" class="nav-link mt-2 d-block" > Fantomas.Core overview (2)
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Formatted Code.html" class="nav-link mt-2 d-block" > Fantomas.Core overview (3)
+</a></li>
+
+<li class="nav-item"><a href="https://fsprojects.github.io/fantomas/docs/contributors/Conditional Compilation Directives.html" class="nav-link mt-2 d-block" > Formatting Conditional Compilation Directives
+</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            </div>
+
+                    <div id="api_reference-wrapper" class="p-2 list-wrapper menu-open">
+            <li class="docs-menu">
+                <button class="btn text-white d-flex p-1 justify-content-between align-items-center" data-bs-toggle="collapse"
+                        data-bs-target="#api_reference" aria-expanded="true">
+                        API Reference
+                        <i class="bi bi-chevron-down mx-2" style="-webkit-text-stroke: 2px;"></i>
+                </button>
+                <div id="api_reference" class="ms-4 collapse show">
+                    <ul class="list-unstyled fw-normal mb-0">
+                        <li class="nav-item"><a href="https://fsprojects.github.io/fantomas/reference/index.html" class="nav-link mt-2 d-block" > All Namespaces</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            </div>
+
+      </div>
+    </div>
+
+    <div class="doc-content">
+     <nav class="navbar navbar-expand-sm border py-1">
+        <div class="container-fluid flex-nowrap">
+          <button class="btn" data-bs-toggle="collapse" data-bs-target="#sidebar-wrapper" data-bs-parent="#main-container" aria-controls="sidebar-wrapper" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="sidebar-toggle fs-3 bi bi-list"></i>
+          </button>
+          <div id="mobile-navbar" class="container-fluid d-flex justify-content-between d-sm-none">
+            <i class="invisible bi bi-github fs-3 align-self-end"></i>
+         <a href="./index.html" ><img id="fsdocs-logo" width="32" height="32" src="https://fsprojects.github.io/fantomas//images/logo.png" /></a>
+            <a class="nav-link m-0 p-0" target="_blank" href="https://github.com/fsprojects/fantomas/"> <i class="bi bi-github fs-3 align-self-end"></i>
+</a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <div class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+                <a class="nav-link active" aria-current="page" href="index.html">Docs</a>
+                <a class="nav-link" target="_blank" href="https://fsprojects.github.io/fantomas-tools/">Tools</a>
+            </div>
+            <form class="d-flex">
+              <div class="input-group me-4">
+              <label for="search-by">
+                <i class="fas fa-search"></i>
+              </label>
+                <div class="btn border-end-0 border">
+                  <i class="bi bi-search"></i>
+                </div>
+                <input aria-label="Search" class="form-control  border-start-0 border" data-search-input=""
+                  id="search-by" type="search" placeholder="Search..." />
+                <span class="input-group-append">
+                </span>
+                <span data-search-clear="">
+                  <i class="fas fa-times"></i>
+                </span>
+              </div>
+            </form>
+            <a class="nav-link m-0 p-0" target="_blank" href="https://github.com/fsprojects/fantomas/">GitHub<i
+                class="bi bi-box-arrow-up-right mx-2"></i></a>
+          </div>
         </div>
-    </nav>
-    <div class="container">
-        <div class="masthead">
-            <h3 class="muted"><a href="/fantomas/">fantomas</a></h3>
-        </div>
-        <hr />
-        <div class="container" id="fsdocs-content">
-            <div>
+      </nav>
+      <div id="fsdocs-content" class="bg-white m-2 m-sm-5 p-3 p-sm-4">
+        <div>
   <h2>
     FormatConfig Type
   </h2>
   <dl class="fsdocs-metadata">
     <dt>
       Namespace: 
-      <a href="/fantomas/reference/fantomas-core.html">
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core.html">
         Fantomas.Core
       </a>
     </dt>
@@ -88,7 +196,7 @@
     </dt>
     <dt>
       Parent Module: 
-      <a href="/fantomas/reference/fantomas-core-formatconfig.html">
+      <a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig.html">
         FormatConfig
       </a>
     </dt>
@@ -98,11 +206,11 @@
     </dt>
     <dt>
       All Interfaces: 
-      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a href="/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a>&gt;</span></code>
+      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a>&gt;</span></code>
       , 
       <code><a href="https://docs.microsoft.com/dotnet/api/system.collections.istructuralequatable">IStructuralEquatable</a></code>
       , 
-      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a href="/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a>&gt;</span></code>
+      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.icomparable-1">IComparable</a>&lt;<a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a>&gt;</span></code>
       , 
       <code><a href="https://docs.microsoft.com/dotnet/api/system.icomparable">IComparable</a></code>
       , 
@@ -139,7 +247,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1374', 1374)" onmouseover="showTip(event, '1374', 1374)">
+              <code onmouseout="hideTip(event, '1369', 1369)" onmouseover="showTip(event, '1369', 1369)">
                 <p>
                   <a id="AlignFunctionSignatureToIndentation">
                     <a href="#AlignFunctionSignatureToIndentation">
@@ -148,7 +256,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1374">
+              <div class="fsdocs-tip" id="1369">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>AlignFunctionSignatureToIndentation</code>
@@ -166,8 +274,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -187,7 +295,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1375', 1375)" onmouseover="showTip(event, '1375', 1375)">
+              <code onmouseout="hideTip(event, '1370', 1370)" onmouseover="showTip(event, '1370', 1370)">
                 <p>
                   <a id="AlternativeLongMemberDefinitions">
                     <a href="#AlternativeLongMemberDefinitions">
@@ -196,7 +304,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1375">
+              <div class="fsdocs-tip" id="1370">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>AlternativeLongMemberDefinitions</code>
@@ -214,8 +322,248 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1371', 1371)" onmouseover="showTip(event, '1371', 1371)">
+                <p>
+                  <a id="ArrayOrListMultilineFormatter">
+                    <a href="#ArrayOrListMultilineFormatter">
+                      <code>ArrayOrListMultilineFormatter</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1371">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>ArrayOrListMultilineFormatter</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-multilineformattertype.html">MultilineFormatterType</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-multilineformattertype.html">MultilineFormatterType</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1372', 1372)" onmouseover="showTip(event, '1372', 1372)">
+                <p>
+                  <a id="BarBeforeDiscriminatedUnionDeclaration">
+                    <a href="#BarBeforeDiscriminatedUnionDeclaration">
+                      <code>BarBeforeDiscriminatedUnionDeclaration</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1372">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>BarBeforeDiscriminatedUnionDeclaration</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1373', 1373)" onmouseover="showTip(event, '1373', 1373)">
+                <p>
+                  <a id="BlankLinesAroundNestedMultilineExpressions">
+                    <a href="#BlankLinesAroundNestedMultilineExpressions">
+                      <code>BlankLinesAroundNestedMultilineExpressions</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1373">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>BlankLinesAroundNestedMultilineExpressions</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1374', 1374)" onmouseover="showTip(event, '1374', 1374)">
+                <p>
+                  <a id="EndOfLine">
+                    <a href="#EndOfLine">
+                      <code>EndOfLine</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1374">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>EndOfLine</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1375', 1375)" onmouseover="showTip(event, '1375', 1375)">
+                <p>
+                  <a id="ExperimentalKeepIndentInBranch">
+                    <a href="#ExperimentalKeepIndentInBranch">
+                      <code>ExperimentalKeepIndentInBranch</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1375">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>ExperimentalKeepIndentInBranch</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -237,9 +585,9 @@
             <div>
               <code onmouseout="hideTip(event, '1376', 1376)" onmouseover="showTip(event, '1376', 1376)">
                 <p>
-                  <a id="ArrayOrListMultilineFormatter">
-                    <a href="#ArrayOrListMultilineFormatter">
-                      <code>ArrayOrListMultilineFormatter</code>
+                  <a id="ExperimentalStroustrupStyle">
+                    <a href="#ExperimentalStroustrupStyle">
+                      <code>ExperimentalStroustrupStyle</code>
                     </a>
                   </a>
                 </p>
@@ -247,55 +595,7 @@
               <div class="fsdocs-tip" id="1376">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>ArrayOrListMultilineFormatter</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-multilineformattertype.html">MultilineFormatterType</a></code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-multilineformattertype.html">MultilineFormatterType</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1377', 1377)" onmouseover="showTip(event, '1377', 1377)">
-                <p>
-                  <a id="BarBeforeDiscriminatedUnionDeclaration">
-                    <a href="#BarBeforeDiscriminatedUnionDeclaration">
-                      <code>BarBeforeDiscriminatedUnionDeclaration</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1377">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>BarBeforeDiscriminatedUnionDeclaration</code>
+                  <code>ExperimentalStroustrupStyle</code>
                   <br/>
                   <br/>
                   <span>
@@ -310,8 +610,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -331,11 +631,59 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
+              <code onmouseout="hideTip(event, '1377', 1377)" onmouseover="showTip(event, '1377', 1377)">
+                <p>
+                  <a id="IndentSize">
+                    <a href="#IndentSize">
+                      <code>IndentSize</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1377">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>IndentSize</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
               <code onmouseout="hideTip(event, '1378', 1378)" onmouseover="showTip(event, '1378', 1378)">
                 <p>
-                  <a id="BlankLinesAroundNestedMultilineExpressions">
-                    <a href="#BlankLinesAroundNestedMultilineExpressions">
-                      <code>BlankLinesAroundNestedMultilineExpressions</code>
+                  <a id="InsertFinalNewline">
+                    <a href="#InsertFinalNewline">
+                      <code>InsertFinalNewline</code>
                     </a>
                   </a>
                 </p>
@@ -343,7 +691,7 @@
               <div class="fsdocs-tip" id="1378">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>BlankLinesAroundNestedMultilineExpressions</code>
+                  <code>InsertFinalNewline</code>
                   <br/>
                   <br/>
                   <span>
@@ -358,8 +706,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -381,9 +729,9 @@
             <div>
               <code onmouseout="hideTip(event, '1379', 1379)" onmouseover="showTip(event, '1379', 1379)">
                 <p>
-                  <a id="EndOfLine">
-                    <a href="#EndOfLine">
-                      <code>EndOfLine</code>
+                  <a id="KeepMaxNumberOfBlankLines">
+                    <a href="#KeepMaxNumberOfBlankLines">
+                      <code>KeepMaxNumberOfBlankLines</code>
                     </a>
                   </a>
                 </p>
@@ -391,12 +739,12 @@
               <div class="fsdocs-tip" id="1379">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>EndOfLine</code>
+                  <code>KeepMaxNumberOfBlankLines</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -406,8 +754,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -418,7 +766,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-endoflinestyle.html">EndOfLineStyle</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -429,9 +777,9 @@
             <div>
               <code onmouseout="hideTip(event, '1380', 1380)" onmouseover="showTip(event, '1380', 1380)">
                 <p>
-                  <a id="ExperimentalKeepIndentInBranch">
-                    <a href="#ExperimentalKeepIndentInBranch">
-                      <code>ExperimentalKeepIndentInBranch</code>
+                  <a id="MaxArrayOrListNumberOfItems">
+                    <a href="#MaxArrayOrListNumberOfItems">
+                      <code>MaxArrayOrListNumberOfItems</code>
                     </a>
                   </a>
                 </p>
@@ -439,12 +787,12 @@
               <div class="fsdocs-tip" id="1380">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>ExperimentalKeepIndentInBranch</code>
+                  <code>MaxArrayOrListNumberOfItems</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code>bool</code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -454,8 +802,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -466,7 +814,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code>bool</code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -477,9 +825,9 @@
             <div>
               <code onmouseout="hideTip(event, '1381', 1381)" onmouseover="showTip(event, '1381', 1381)">
                 <p>
-                  <a id="ExperimentalStroustrupStyle">
-                    <a href="#ExperimentalStroustrupStyle">
-                      <code>ExperimentalStroustrupStyle</code>
+                  <a id="MaxArrayOrListWidth">
+                    <a href="#MaxArrayOrListWidth">
+                      <code>MaxArrayOrListWidth</code>
                     </a>
                   </a>
                 </p>
@@ -487,12 +835,12 @@
               <div class="fsdocs-tip" id="1381">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>ExperimentalStroustrupStyle</code>
+                  <code>MaxArrayOrListWidth</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code>bool</code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -502,8 +850,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -514,7 +862,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code>bool</code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -525,9 +873,9 @@
             <div>
               <code onmouseout="hideTip(event, '1382', 1382)" onmouseover="showTip(event, '1382', 1382)">
                 <p>
-                  <a id="IndentSize">
-                    <a href="#IndentSize">
-                      <code>IndentSize</code>
+                  <a id="MaxDotGetExpressionWidth">
+                    <a href="#MaxDotGetExpressionWidth">
+                      <code>MaxDotGetExpressionWidth</code>
                     </a>
                   </a>
                 </p>
@@ -535,12 +883,12 @@
               <div class="fsdocs-tip" id="1382">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>IndentSize</code>
+                  <code>MaxDotGetExpressionWidth</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -550,8 +898,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -562,7 +910,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -573,9 +921,9 @@
             <div>
               <code onmouseout="hideTip(event, '1383', 1383)" onmouseover="showTip(event, '1383', 1383)">
                 <p>
-                  <a id="InsertFinalNewline">
-                    <a href="#InsertFinalNewline">
-                      <code>InsertFinalNewline</code>
+                  <a id="MaxFunctionBindingWidth">
+                    <a href="#MaxFunctionBindingWidth">
+                      <code>MaxFunctionBindingWidth</code>
                     </a>
                   </a>
                 </p>
@@ -583,12 +931,12 @@
               <div class="fsdocs-tip" id="1383">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>InsertFinalNewline</code>
+                  <code>MaxFunctionBindingWidth</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code>bool</code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -598,8 +946,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -610,7 +958,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code>bool</code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -621,9 +969,9 @@
             <div>
               <code onmouseout="hideTip(event, '1384', 1384)" onmouseover="showTip(event, '1384', 1384)">
                 <p>
-                  <a id="KeepMaxNumberOfBlankLines">
-                    <a href="#KeepMaxNumberOfBlankLines">
-                      <code>KeepMaxNumberOfBlankLines</code>
+                  <a id="MaxIfThenElseShortWidth">
+                    <a href="#MaxIfThenElseShortWidth">
+                      <code>MaxIfThenElseShortWidth</code>
                     </a>
                   </a>
                 </p>
@@ -631,12 +979,12 @@
               <div class="fsdocs-tip" id="1384">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>KeepMaxNumberOfBlankLines</code>
+                  <code>MaxIfThenElseShortWidth</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -646,8 +994,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -658,7 +1006,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -669,9 +1017,9 @@
             <div>
               <code onmouseout="hideTip(event, '1385', 1385)" onmouseover="showTip(event, '1385', 1385)">
                 <p>
-                  <a id="MaxArrayOrListNumberOfItems">
-                    <a href="#MaxArrayOrListNumberOfItems">
-                      <code>MaxArrayOrListNumberOfItems</code>
+                  <a id="MaxIfThenShortWidth">
+                    <a href="#MaxIfThenShortWidth">
+                      <code>MaxIfThenShortWidth</code>
                     </a>
                   </a>
                 </p>
@@ -679,12 +1027,12 @@
               <div class="fsdocs-tip" id="1385">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>MaxArrayOrListNumberOfItems</code>
+                  <code>MaxIfThenShortWidth</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -694,8 +1042,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -706,7 +1054,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -717,9 +1065,9 @@
             <div>
               <code onmouseout="hideTip(event, '1386', 1386)" onmouseover="showTip(event, '1386', 1386)">
                 <p>
-                  <a id="MaxArrayOrListWidth">
-                    <a href="#MaxArrayOrListWidth">
-                      <code>MaxArrayOrListWidth</code>
+                  <a id="MaxInfixOperatorExpression">
+                    <a href="#MaxInfixOperatorExpression">
+                      <code>MaxInfixOperatorExpression</code>
                     </a>
                   </a>
                 </p>
@@ -727,12 +1075,12 @@
               <div class="fsdocs-tip" id="1386">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>MaxArrayOrListWidth</code>
+                  <code>MaxInfixOperatorExpression</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -742,8 +1090,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -754,7 +1102,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -765,9 +1113,9 @@
             <div>
               <code onmouseout="hideTip(event, '1387', 1387)" onmouseover="showTip(event, '1387', 1387)">
                 <p>
-                  <a id="MaxDotGetExpressionWidth">
-                    <a href="#MaxDotGetExpressionWidth">
-                      <code>MaxDotGetExpressionWidth</code>
+                  <a id="MaxLineLength">
+                    <a href="#MaxLineLength">
+                      <code>MaxLineLength</code>
                     </a>
                   </a>
                 </p>
@@ -775,12 +1123,12 @@
               <div class="fsdocs-tip" id="1387">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>MaxDotGetExpressionWidth</code>
+                  <code>MaxLineLength</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -790,8 +1138,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -802,7 +1150,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -813,9 +1161,9 @@
             <div>
               <code onmouseout="hideTip(event, '1388', 1388)" onmouseover="showTip(event, '1388', 1388)">
                 <p>
-                  <a id="MaxFunctionBindingWidth">
-                    <a href="#MaxFunctionBindingWidth">
-                      <code>MaxFunctionBindingWidth</code>
+                  <a id="MaxRecordNumberOfItems">
+                    <a href="#MaxRecordNumberOfItems">
+                      <code>MaxRecordNumberOfItems</code>
                     </a>
                   </a>
                 </p>
@@ -823,12 +1171,12 @@
               <div class="fsdocs-tip" id="1388">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>MaxFunctionBindingWidth</code>
+                  <code>MaxRecordNumberOfItems</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -838,8 +1186,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -850,7 +1198,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -861,9 +1209,9 @@
             <div>
               <code onmouseout="hideTip(event, '1389', 1389)" onmouseover="showTip(event, '1389', 1389)">
                 <p>
-                  <a id="MaxIfThenElseShortWidth">
-                    <a href="#MaxIfThenElseShortWidth">
-                      <code>MaxIfThenElseShortWidth</code>
+                  <a id="MaxRecordWidth">
+                    <a href="#MaxRecordWidth">
+                      <code>MaxRecordWidth</code>
                     </a>
                   </a>
                 </p>
@@ -871,12 +1219,12 @@
               <div class="fsdocs-tip" id="1389">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>MaxIfThenElseShortWidth</code>
+                  <code>MaxRecordWidth</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -886,8 +1234,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -898,7 +1246,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -909,9 +1257,9 @@
             <div>
               <code onmouseout="hideTip(event, '1390', 1390)" onmouseover="showTip(event, '1390', 1390)">
                 <p>
-                  <a id="MaxInfixOperatorExpression">
-                    <a href="#MaxInfixOperatorExpression">
-                      <code>MaxInfixOperatorExpression</code>
+                  <a id="MaxValueBindingWidth">
+                    <a href="#MaxValueBindingWidth">
+                      <code>MaxValueBindingWidth</code>
                     </a>
                   </a>
                 </p>
@@ -919,12 +1267,12 @@
               <div class="fsdocs-tip" id="1390">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>MaxInfixOperatorExpression</code>
+                  <code>MaxValueBindingWidth</code>
                   <br/>
                   <br/>
                   <span>
                     Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
                   </span>
                   <br/>
                 </div>
@@ -934,8 +1282,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -946,7 +1294,7 @@
                 <span class="fsdocs-return-name">
                   Field type: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -957,198 +1305,6 @@
             <div>
               <code onmouseout="hideTip(event, '1391', 1391)" onmouseover="showTip(event, '1391', 1391)">
                 <p>
-                  <a id="MaxLineLength">
-                    <a href="#MaxLineLength">
-                      <code>MaxLineLength</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1391">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>MaxLineLength</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1392', 1392)" onmouseover="showTip(event, '1392', 1392)">
-                <p>
-                  <a id="MaxRecordNumberOfItems">
-                    <a href="#MaxRecordNumberOfItems">
-                      <code>MaxRecordNumberOfItems</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1392">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>MaxRecordNumberOfItems</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1393', 1393)" onmouseover="showTip(event, '1393', 1393)">
-                <p>
-                  <a id="MaxRecordWidth">
-                    <a href="#MaxRecordWidth">
-                      <code>MaxRecordWidth</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1393">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>MaxRecordWidth</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1394', 1394)" onmouseover="showTip(event, '1394', 1394)">
-                <p>
-                  <a id="MaxValueBindingWidth">
-                    <a href="#MaxValueBindingWidth">
-                      <code>MaxValueBindingWidth</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1394">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>MaxValueBindingWidth</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-num.html">Num</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1395', 1395)" onmouseover="showTip(event, '1395', 1395)">
-                <p>
                   <a id="MultiLineLambdaClosingNewline">
                     <a href="#MultiLineLambdaClosingNewline">
                       <code>MultiLineLambdaClosingNewline</code>
@@ -1156,7 +1312,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1395">
+              <div class="fsdocs-tip" id="1391">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>MultiLineLambdaClosingNewline</code>
@@ -1174,8 +1330,200 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1392', 1392)" onmouseover="showTip(event, '1392', 1392)">
+                <p>
+                  <a id="MultilineBlockBracketsOnSameColumn">
+                    <a href="#MultilineBlockBracketsOnSameColumn">
+                      <code>MultilineBlockBracketsOnSameColumn</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1392">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>MultilineBlockBracketsOnSameColumn</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1393', 1393)" onmouseover="showTip(event, '1393', 1393)">
+                <p>
+                  <a id="NewlineBetweenTypeDefinitionAndMembers">
+                    <a href="#NewlineBetweenTypeDefinitionAndMembers">
+                      <code>NewlineBetweenTypeDefinitionAndMembers</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1393">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>NewlineBetweenTypeDefinitionAndMembers</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1394', 1394)" onmouseover="showTip(event, '1394', 1394)">
+                <p>
+                  <a id="RecordMultilineFormatter">
+                    <a href="#RecordMultilineFormatter">
+                      <code>RecordMultilineFormatter</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1394">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>RecordMultilineFormatter</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-multilineformattertype.html">MultilineFormatterType</a></code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-multilineformattertype.html">MultilineFormatterType</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1395', 1395)" onmouseover="showTip(event, '1395', 1395)">
+                <p>
+                  <a id="SpaceAfterComma">
+                    <a href="#SpaceAfterComma">
+                      <code>SpaceAfterComma</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1395">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>SpaceAfterComma</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1197,9 +1545,9 @@
             <div>
               <code onmouseout="hideTip(event, '1396', 1396)" onmouseover="showTip(event, '1396', 1396)">
                 <p>
-                  <a id="MultilineBlockBracketsOnSameColumn">
-                    <a href="#MultilineBlockBracketsOnSameColumn">
-                      <code>MultilineBlockBracketsOnSameColumn</code>
+                  <a id="SpaceAfterSemicolon">
+                    <a href="#SpaceAfterSemicolon">
+                      <code>SpaceAfterSemicolon</code>
                     </a>
                   </a>
                 </p>
@@ -1207,7 +1555,7 @@
               <div class="fsdocs-tip" id="1396">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>MultilineBlockBracketsOnSameColumn</code>
+                  <code>SpaceAfterSemicolon</code>
                   <br/>
                   <br/>
                   <span>
@@ -1222,8 +1570,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1245,9 +1593,9 @@
             <div>
               <code onmouseout="hideTip(event, '1397', 1397)" onmouseover="showTip(event, '1397', 1397)">
                 <p>
-                  <a id="NewlineBetweenTypeDefinitionAndMembers">
-                    <a href="#NewlineBetweenTypeDefinitionAndMembers">
-                      <code>NewlineBetweenTypeDefinitionAndMembers</code>
+                  <a id="SpaceAroundDelimiter">
+                    <a href="#SpaceAroundDelimiter">
+                      <code>SpaceAroundDelimiter</code>
                     </a>
                   </a>
                 </p>
@@ -1255,7 +1603,7 @@
               <div class="fsdocs-tip" id="1397">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>NewlineBetweenTypeDefinitionAndMembers</code>
+                  <code>SpaceAroundDelimiter</code>
                   <br/>
                   <br/>
                   <span>
@@ -1270,8 +1618,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1293,9 +1641,9 @@
             <div>
               <code onmouseout="hideTip(event, '1398', 1398)" onmouseover="showTip(event, '1398', 1398)">
                 <p>
-                  <a id="RecordMultilineFormatter">
-                    <a href="#RecordMultilineFormatter">
-                      <code>RecordMultilineFormatter</code>
+                  <a id="SpaceBeforeClassConstructor">
+                    <a href="#SpaceBeforeClassConstructor">
+                      <code>SpaceBeforeClassConstructor</code>
                     </a>
                   </a>
                 </p>
@@ -1303,55 +1651,7 @@
               <div class="fsdocs-tip" id="1398">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>RecordMultilineFormatter</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-multilineformattertype.html">MultilineFormatterType</a></code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-multilineformattertype.html">MultilineFormatterType</a></code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1399', 1399)" onmouseover="showTip(event, '1399', 1399)">
-                <p>
-                  <a id="SpaceAfterComma">
-                    <a href="#SpaceAfterComma">
-                      <code>SpaceAfterComma</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1399">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>SpaceAfterComma</code>
+                  <code>SpaceBeforeClassConstructor</code>
                   <br/>
                   <br/>
                   <span>
@@ -1366,8 +1666,56 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
+              </a>
+              <p class="fsdocs-summary">
+                
+              </p>
+            </div>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Field type: 
+                </span>
+                <code>bool</code>
+              </dt>
+              <dd class="fsdocs-return-docs"></dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-usage">
+            <div>
+              <code onmouseout="hideTip(event, '1399', 1399)" onmouseover="showTip(event, '1399', 1399)">
+                <p>
+                  <a id="SpaceBeforeColon">
+                    <a href="#SpaceBeforeColon">
+                      <code>SpaceBeforeColon</code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="1399">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code>SpaceBeforeColon</code>
+                  <br/>
+                  <br/>
+                  <span>
+                    Field type: 
+                    <code>bool</code>
+                  </span>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-member-xmldoc">
+            <div class="fsdocs-summary">
+              <a href="" class="fsdocs-source-link" title="Source on GitHub">
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1389,9 +1737,9 @@
             <div>
               <code onmouseout="hideTip(event, '1400', 1400)" onmouseover="showTip(event, '1400', 1400)">
                 <p>
-                  <a id="SpaceAfterSemicolon">
-                    <a href="#SpaceAfterSemicolon">
-                      <code>SpaceAfterSemicolon</code>
+                  <a id="SpaceBeforeLowercaseInvocation">
+                    <a href="#SpaceBeforeLowercaseInvocation">
+                      <code>SpaceBeforeLowercaseInvocation</code>
                     </a>
                   </a>
                 </p>
@@ -1399,7 +1747,7 @@
               <div class="fsdocs-tip" id="1400">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>SpaceAfterSemicolon</code>
+                  <code>SpaceBeforeLowercaseInvocation</code>
                   <br/>
                   <br/>
                   <span>
@@ -1414,8 +1762,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1437,9 +1785,9 @@
             <div>
               <code onmouseout="hideTip(event, '1401', 1401)" onmouseover="showTip(event, '1401', 1401)">
                 <p>
-                  <a id="SpaceAroundDelimiter">
-                    <a href="#SpaceAroundDelimiter">
-                      <code>SpaceAroundDelimiter</code>
+                  <a id="SpaceBeforeMember">
+                    <a href="#SpaceBeforeMember">
+                      <code>SpaceBeforeMember</code>
                     </a>
                   </a>
                 </p>
@@ -1447,7 +1795,7 @@
               <div class="fsdocs-tip" id="1401">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>SpaceAroundDelimiter</code>
+                  <code>SpaceBeforeMember</code>
                   <br/>
                   <br/>
                   <span>
@@ -1462,8 +1810,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1485,9 +1833,9 @@
             <div>
               <code onmouseout="hideTip(event, '1402', 1402)" onmouseover="showTip(event, '1402', 1402)">
                 <p>
-                  <a id="SpaceBeforeClassConstructor">
-                    <a href="#SpaceBeforeClassConstructor">
-                      <code>SpaceBeforeClassConstructor</code>
+                  <a id="SpaceBeforeParameter">
+                    <a href="#SpaceBeforeParameter">
+                      <code>SpaceBeforeParameter</code>
                     </a>
                   </a>
                 </p>
@@ -1495,7 +1843,7 @@
               <div class="fsdocs-tip" id="1402">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>SpaceBeforeClassConstructor</code>
+                  <code>SpaceBeforeParameter</code>
                   <br/>
                   <br/>
                   <span>
@@ -1510,8 +1858,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1533,9 +1881,9 @@
             <div>
               <code onmouseout="hideTip(event, '1403', 1403)" onmouseover="showTip(event, '1403', 1403)">
                 <p>
-                  <a id="SpaceBeforeColon">
-                    <a href="#SpaceBeforeColon">
-                      <code>SpaceBeforeColon</code>
+                  <a id="SpaceBeforeSemicolon">
+                    <a href="#SpaceBeforeSemicolon">
+                      <code>SpaceBeforeSemicolon</code>
                     </a>
                   </a>
                 </p>
@@ -1543,7 +1891,7 @@
               <div class="fsdocs-tip" id="1403">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>SpaceBeforeColon</code>
+                  <code>SpaceBeforeSemicolon</code>
                   <br/>
                   <br/>
                   <span>
@@ -1558,8 +1906,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1581,9 +1929,9 @@
             <div>
               <code onmouseout="hideTip(event, '1404', 1404)" onmouseover="showTip(event, '1404', 1404)">
                 <p>
-                  <a id="SpaceBeforeLowercaseInvocation">
-                    <a href="#SpaceBeforeLowercaseInvocation">
-                      <code>SpaceBeforeLowercaseInvocation</code>
+                  <a id="SpaceBeforeUppercaseInvocation">
+                    <a href="#SpaceBeforeUppercaseInvocation">
+                      <code>SpaceBeforeUppercaseInvocation</code>
                     </a>
                   </a>
                 </p>
@@ -1591,7 +1939,7 @@
               <div class="fsdocs-tip" id="1404">
                 <div class="member-tooltip">
                   Full Usage: 
-                  <code>SpaceBeforeLowercaseInvocation</code>
+                  <code>SpaceBeforeUppercaseInvocation</code>
                   <br/>
                   <br/>
                   <span>
@@ -1606,8 +1954,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1629,198 +1977,6 @@
             <div>
               <code onmouseout="hideTip(event, '1405', 1405)" onmouseover="showTip(event, '1405', 1405)">
                 <p>
-                  <a id="SpaceBeforeMember">
-                    <a href="#SpaceBeforeMember">
-                      <code>SpaceBeforeMember</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1405">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>SpaceBeforeMember</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code>bool</code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1406', 1406)" onmouseover="showTip(event, '1406', 1406)">
-                <p>
-                  <a id="SpaceBeforeParameter">
-                    <a href="#SpaceBeforeParameter">
-                      <code>SpaceBeforeParameter</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1406">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>SpaceBeforeParameter</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code>bool</code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1407', 1407)" onmouseover="showTip(event, '1407', 1407)">
-                <p>
-                  <a id="SpaceBeforeSemicolon">
-                    <a href="#SpaceBeforeSemicolon">
-                      <code>SpaceBeforeSemicolon</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1407">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>SpaceBeforeSemicolon</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code>bool</code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1408', 1408)" onmouseover="showTip(event, '1408', 1408)">
-                <p>
-                  <a id="SpaceBeforeUppercaseInvocation">
-                    <a href="#SpaceBeforeUppercaseInvocation">
-                      <code>SpaceBeforeUppercaseInvocation</code>
-                    </a>
-                  </a>
-                </p>
-              </code>
-              <div class="fsdocs-tip" id="1408">
-                <div class="member-tooltip">
-                  Full Usage: 
-                  <code>SpaceBeforeUppercaseInvocation</code>
-                  <br/>
-                  <br/>
-                  <span>
-                    Field type: 
-                    <code>bool</code>
-                  </span>
-                  <br/>
-                </div>
-              </div>
-            </div>
-          </td>
-          <td class="fsdocs-member-xmldoc">
-            <div class="fsdocs-summary">
-              <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
-              </a>
-              <p class="fsdocs-summary">
-                
-              </p>
-            </div>
-            <dl class="fsdocs-returns">
-              <dt>
-                <span class="fsdocs-return-name">
-                  Field type: 
-                </span>
-                <code>bool</code>
-              </dt>
-              <dd class="fsdocs-return-docs"></dd>
-            </dl>
-          </td>
-        </tr>
-        <tr>
-          <td class="fsdocs-member-usage">
-            <div>
-              <code onmouseout="hideTip(event, '1409', 1409)" onmouseover="showTip(event, '1409', 1409)">
-                <p>
                   <a id="StrictMode">
                     <a href="#StrictMode">
                       <code>StrictMode</code>
@@ -1828,7 +1984,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1409">
+              <div class="fsdocs-tip" id="1405">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code>StrictMode</code>
@@ -1846,8 +2002,8 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1889,7 +2045,7 @@
         <tr>
           <td class="fsdocs-member-usage">
             <div>
-              <code onmouseout="hideTip(event, '1410', 1410)" onmouseover="showTip(event, '1410', 1410)">
+              <code onmouseout="hideTip(event, '1406', 1406)" onmouseover="showTip(event, '1406', 1406)">
                 <p>
                   <a id="Default">
                     <a href="#Default">
@@ -1898,7 +2054,7 @@
                   </a>
                 </p>
               </code>
-              <div class="fsdocs-tip" id="1410">
+              <div class="fsdocs-tip" id="1406">
                 <div class="member-tooltip">
                   Full Usage: 
                   <code><span>FormatConfig.Default</span></code>
@@ -1906,7 +2062,7 @@
                   <br/>
                   <span>
                     Returns: 
-                    <code><a href="/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a></code>
+                    <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a></code>
                   </span>
                   <br/>
                 </div>
@@ -1916,16 +2072,16 @@
           <td class="fsdocs-member-xmldoc">
             <div class="fsdocs-summary">
               <div class="fsdocs-source-link" title="Copy signature (Markdown)" onclick="Clipboard_CopyTo('`cref:P:Fantomas.Core.FormatConfig.FormatConfig.Default`')">
-                <img src="/fantomas/content/img/copy-md.png" class="normal"/>
-                <img src="/fantomas/content/img/copy-md-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-md-hover.png" class="hover"/>
               </div>
               <div class="fsdocs-source-link" title="Copy signature (XML)" onclick="Clipboard_CopyTo('<see cref=\'P:Fantomas.Core.FormatConfig.FormatConfig.Default\'/>')">
-                <img src="/fantomas/content/img/copy-xml.png" class="normal"/>
-                <img src="/fantomas/content/img/copy-xml-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/copy-xml-hover.png" class="hover"/>
               </div>
               <a href="" class="fsdocs-source-link" title="Source on GitHub">
-                <img src="/fantomas/content/img/github.png" class="normal"/>
-                <img src="/fantomas/content/img/github-hover.png" class="hover"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github.png" class="normal"/>
+                <img src="https://fsprojects.github.io/fantomas/content/img/github-hover.png" class="hover"/>
               </a>
               <p class="fsdocs-summary">
                 
@@ -1936,7 +2092,7 @@
                 <span class="fsdocs-return-name">
                   Returns: 
                 </span>
-                <code><a href="/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a></code>
+                <code><a href="https://fsprojects.github.io/fantomas/reference/fantomas-core-formatconfig-formatconfig.html">FormatConfig</a></code>
               </dt>
               <dd class="fsdocs-return-docs"></dd>
             </dl>
@@ -1946,17 +2102,53 @@
     </table>
   </div>
 </div>
-            
-        </div>
-
-        <!-- BEGIN SEARCH BOX: this adds support for the search box -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
-        <script type="text/javascript">var fsdocs_search_baseurl = '/fantomas/';</script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
-        <script type="text/javascript" src="/fantomas/content/fsdocs-search.js"></script>
-        <!-- END SEARCH BOX: this adds support for the search box -->
+        
+      </div>
+        <div id="push"></div>
     </div>
+  </main>
+  <script type="text/javascript">
+window.addEventListener('load', (event) => {
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+addEventListener('hide.bs.collapse', (e) => {
+  if (e.target && e.target.id === 'sidebar-wrapper') {
+    document.getElementById('main-container').classList.add('toggled');
+  }
+  else{
+    document.getElementById(e.target.id+'-wrapper').classList.remove('menu-open');
+  }
+})
+addEventListener('show.bs.collapse', (e) => {
+  if (e.target && e.target.id === 'sidebar-wrapper') {
+   document.getElementById('main-container').classList.remove('toggled');
+  }
+  else{
+    document.getElementById(e.target.id+'-wrapper').classList.add('menu-open');
+  }
+})
+});
+  </script>
+  <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+  <script type="text/javascript">var fsdocs_search_baseurl = 'https://fsprojects.github.io/fantomas/';</script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+  <script type="text/javascript" src="https://fsprojects.github.io/fantomas/content/fsdocs-search.js"></script>
+  <!-- END SEARCH BOX: this adds support for the search box -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script type="module" src="https://fsprojects.github.io/fantomas/content/fantomas-setting-icon.js"></script>
+  <script type="module">
+      import mermaid from "https://cdn.skypack.dev/mermaid";
+      mermaid.initialize({
+          startOnLoad: true,
+          theme: "base",
+          themeVariables: {
+              primaryColor: '#eff5f7'
+          }
+      });
+  </script>
 </body>
-
 </html>
